@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrio Systems</title>
+    <!-- * favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/img/logos/dankory-fav500x500.png">
+    <!-- * css connection -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- * google font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="h-screen font-[Poppins]">
+    <header class="bg-white">
+        <div class="flex items-center w-[90%] mx-auto h-8 xs:h-5">
+            <div class="flex px-2 gap-2 py-2">
+                <img src="./assets/img/icons/phone-call.svg" class="rotate-45" alt="Phone call Icon" width="13">
+                <button class="flex items-center px-2 text-xs gap-1 text-gray-300">US/Canada <span><img src="./assets/img/icons/caret-down-solid.svg" alt="Caret Down Icon" width="6"> </span>
+                </button>
+                <p class="text-xs font-semibold">+1 888 338 76 38</p>
+            </div>
+        </div>
+        <nav class="flex shrink justify-between items-center w-[90%]  mx-auto">
+            <div>
+                <img class="w-40 py-2 cursor-pointer" src="./assets/img/gallery/Untitled.png" alt="...">
+            </div>
+            <div class="flex gap-2">
+                <div class="gap-2 xl:gap-10 items-center hidden xl:flex ">
+                    <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1" class="flex items-center py-2 px-3 text-neutral-900 font-medium">Expertise <span><img src="./assets/img/icons/chevron-down.svg" alt="Chevron Down Icon" class="w-4"></span>
+                    </button>
+                    <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    </li>
+                                        <li aria-labelledby="dropdownNavbarLink1">
+                                            <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shop
+                                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                                </svg>
+                                            </button>
+                                            <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                                                    <li>
+                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                                                    </li>
+                                                    <li>
+                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
+                                                    </li>
+                                                    <li>
+                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                                                    </li>
+                                                    <li>
+                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            </li>
+                        </ul>
+                        <div class="py-1">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                        </div>
+                    </div>
+                    <h3 class="text-neutral-900 font-medium">Home</h3>
+                    <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2" class="flex items-center py-2 px-3 text-neutral-900 font-medium">Company <span><img src="./assets/img/icons/chevron-down.svg" alt="Chevron Down Icon" class="w-4"></span>
+                    </button>
+                    <div id="dropdownNavbar2" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li aria-labelledby="dropdownNavbarLink">
+                            <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shop
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                            </button>
+                            <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        </li>
+                        </ul>
+                        <div class="py-1">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                        </div>
+                    </div>
+                    <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3" class="flex items-center py-2 px-3 text-neutral-900 font-medium">Cooperation <span><img src="./assets/img/icons/chevron-down.svg" alt="Chevron Down Icon" class="w-4"></span>
+                    </button>
+                    <div id="dropdownNavbar3" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li aria-labelledby="dropdownNavbarLink1">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shop
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                        </button>
+                        <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                                </li>
+                                <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        </li>
+                    </ul>
+                    <div class="py-1">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                    </div>
+                    </div>
+                    <h3 class="text-neutral-900 font-medium">Blog</h3>
+                    <div class="flex items-center text-neutral-900 font-medium gap-1">
+                        <span><img src="./assets/img/icons/icons8-user-24.png" alt="User Icon" class="w-3"></span>
+                        <button>Client Login</button>
+                    </div>
+                </div>
+                <button class="bg-integrio-orange text-white transform ease-in-out delay-75 duration-200 hover:ring-2 hover:ring-integrio-orange hover:text-integrio-orange hover:bg-white hover:font-medium hover:scale-110 font-normal px-5 py-2 text-sm hidden lg:flex items-center gap-1 ml-4">Get a Qoute <span><img src="./assets/img/icons/arrow-right.svg" alt="Arrow right Icon" width="15"></span></button>
+                <div class="flex items-center">
+                    <img onclick="onToggleMenu(this)" src="./assets/img/icons/menu.svg" alt="Hamburger Icon" class="cursor-pointer xl:hidden" width="25">
+                </div>
+            </div>
+
+            <!-- TODO Container for the mobile menu -->
+            <div class="z-40 nav-links duration-500 xl:static absolute bg-white xl:min-h-fit min-h-[60vh] left-0 top-[-100%] xl:w-auto w-full flex items-center px-5 xl:hidden">
+                <ul class="flex xl:flex-row flex-col xl:items-center xl:gap-[4vw] gap-8">
+                    <li>
+                        <button class="flex items-center py-2 text-neutral-900 font-medium">Expertise <span><img src="./assets/img/icons/chevron-down.svg" alt="Chevron Down Icon" class="w-4"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <button  class="flex items-center py-2 text-neutral-900 font-medium">Company <span><img src="./assets/img/icons/chevron-down.svg" alt="Chevron Down Icon" class="w-4"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button  class="flex items-center py-2 text-neutral-900 font-medium">Cooperation <span><img src="./assets/img/icons/chevron-down.svg" alt="Chevron Down Icon" class="w-4"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Blog</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center text-neutral-900 font-medium gap-1">
+                            <span><img src="./assets/img/icons/icons8-user-24.png" alt="User Icon" class="w-3"></span>
+                            <button>Client Login</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-neutral-50 h-dvh" id="homesection">
+        <div class="h-full w-[90%] mx-auto flex flex-wrap items-center justify-between">
+            <div class="flex flex-col">
+                <h1 class="font-semibold tracking-wide text-4xl sm:text-7xl font-[Poppins] mb-8 ">Our <br> Customers</h1>
+                <div class="flex items-center transform ease-in-out delay-75 duration-300 hover:translate-x-7 hover:scale-110">
+                    <button class="border-2 border-black hover:bg-integrio-orange-300 text-black font-normal px-5 py-2 text-xl flex items-center gap-5">View Case Studies <span><img src="./assets/img/icons/arrow-right.svg" alt="Arrow right Icon" width="15"></span></button>
+                </div>
+            </div>  
+            <div class="hidden md:flex items-center">
+                <div class="grid grid-cols-3 gap-4 place-items-center">
+                    <img src="./assets/img/company/Jonas.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/cinepolis.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/Air_Canada_line.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/nokia.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/member sol.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/cascade.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/grubhub.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/mobiry.png" alt="Air Canada Logo">
+                    <img src="./assets/img/company/camtran.png" alt="Air Canada Logo">
+                </div>
+            </div>
+            <div class="flex md:hidden space-x-16 overflow-hidden h-5 sm:h-auto">
+                <div class="flex space-x-16 animate-loop-scroll">
+                    <img loading="lazy" src="./assets/img/company/Jonas.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/cinepolis.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/Air_Canada_line.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/nokia.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/member sol.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/cascade.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/grubhub.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/mobiry.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/camtran.png" alt="Air Canada Logo" class="max-w-none">
+                </div>
+                <div class="flex space-x-16 animate-loop-scroll" aria-hidden="true">
+                    <img loading="lazy" src="./assets/img/company/Jonas.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/cinepolis.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/Air_Canada_line.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/nokia.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/member sol.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/cascade.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/grubhub.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/mobiry.png" alt="Air Canada Logo" class="max-w-none">
+                    <img loading="lazy" src="./assets/img/company/camtran.png" alt="Air Canada Logo" class="max-w-none">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="bg-integrio h-max xl:h-dvh relative">
+        <div class="w-[90%] mx-auto h-full flex items-center py-24 lg:py-14 xl:py-9">
+            <div class="flex flex-col flex-wrap justify-evenly gap-10">
+                <h1 class="text-white text-3xl xl:text-5xl font-medium tracking-wide leading-normal">We are proud to have designed solutions that were industry firsts.</h1>
+                <div class="flex flex-col xl:flex-row gap-10 items-start">
+                    <img loading="lazy" src="./assets/img/gallery/Photo 3.png" alt="Company Photo" >
+                    <div class="overflow-y-auto h-[200px] min-w-[200px] 2xl:h-auto">
+                        <div class="flex flex-col gap-5 text-white">
+                            <p class="font-light text-sm leading-loose">Innovation is in our DNA. We are proud to have designed solutions that were industry firsts. For example, our team developed one of the first Content Management Systems around the turn of the millennium, we implemented technology used to launch and operate one of the first internationalized (multi-lingual) domain names in the world. Our team was involved with the first commercial test of mobile OCR technology for mobile ticketing in North America.</p>
+                            <p class="font-light text-sm leading-loose">Because projects that we worked on over the years were often challenging and required a scientific approach, we always had high-level mathematicians and data scientists on the team. That’s why, in 2017, we started a formal AI and ML department. This allows us to offer not only product development but also comprehensive <span class="text-integrio-orange">artificial intelligence</span> and data science services to help our clients maintain a competitive edge.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pl-0 xl:pl-5">
+                        <h1 class="text-white font-bold text-7xl pb-5">200+</h1>
+                        <div class="border-t-2 border-white w-64"></div> <!-- Horizontal line -->
+                        <h3 class="text-white font-medium text-xl pt-5">Customer Retention Rate</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 right-24 bg-[#52285F] w-1/2 h-10"></div>
+    </section>
+    <footer class="bg-white h-max relative">
+        <div class="w-[90%] mx-auto h-full flex items-center py-24 lg:py-14 xl:py-9">
+            <div class="flex flex-col xl:flex-row gap-10 items-start justify-b"> <!-- Added gap-x-0 here -->
+                <div class="flex flex-row flex-wrap gap-5">
+                    <div class="flex flex-col gap-5 text-black">
+                        <h2 class="text-lg font-medium">Locations</h2>
+                        <div class="border-t-2 border-black w-full"></div>
+                        <ul class="list-none">
+                            <li>Krakow, Poland</li>
+                            <li>Kharkiv, Ukraine</li>
+                            <li>San Francisco, USA</li>
+                            <li>Vancover, Canada</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-5 text-black">
+                        <h2 class="text-lg font-medium">Locations</h2>
+                        <div class="border-t-2 border-black w-full"></div>
+                        <ul class="list-none">
+                            <li>News</li>
+                            <li>Privacy Policy</li>
+                            <li>About</li>
+                            <li>Download Free Uptime Scout App</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 text-black">
+                    <h2 class="text-lg font-medium">Locations</h2>
+                    <div class="border-t-2 border-black w-full"></div>
+                    <div class="flex flex-row gap-12">
+                        <ul class="list-none">
+                            <li>Hire React Developers</li>
+                            <li>Hire Angular Developers</li>
+                            <li>Hire Javascript Developers</li>
+                            <li>Hire Java Developers</li>
+                            <li>Hire PHP Developers</li>
+                        </ul>
+                        <ul class="list-none">
+                            <li>Hire .NET Developers</li>
+                            <li>Hire Node.js Developers</li>
+                            <li>Hire Python Developers</li>
+                            <li>Hire Ruby Developers</li>
+                            <li>Hire C/C++ Developers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-0 left-24 bg-integrio-orange  w-1/4  h-5"></div>
+    </footer>
+    
+    
+    <div class="flex items-center mx-auto h-max bg-slate-200">
+        <div class="flex w-[90%] mx-auto py-2 justify-between flex-wrap">
+            <div class="flex flex-row flex-wrap gap-3 mb-2 sm:mb-0">
+                <div class="flex px-2 gap-2 items-center">
+                    <h3 class="font-bold text-sm">F</h3>
+                    <p class="text-xs font-normal text-black">1-888-DEV-SOFT (338-7638)</p>
+                </div>
+                <div class="flex px-2 gap-2 items-center">
+                    <h3 class="font-bold text-sm">P</h3>
+                    <p class="text-xs font-normal">+1 778 881 4161</p>
+                </div>
+                <div class="flex px-2 gap-2 items-center">
+                    <h3 class="font-bold text-sm">E</h3>
+                    <p class="text-xs font-normal">info@integrio.net</p>
+                </div>
+            </div>
+    
+            <div class="flex items-center gap-1 sm:gap-10 flex-wrap">
+                <p class="text-slate-400 text-xs">© 2021 Integrio Systems. All rights reserved.</p>
+                <div class="flex flex-row flex-wrap gap-4">
+                    <img loading="lazy" src="./assets/img/icons/twitter.png" alt="Twitter Icon" class="tranform ease-in-out delay-75 duration-200 hover:scale-125">
+                    <img loading="lazy" src="./assets/img/icons/fb.png" alt="Twitter Icon" class="tranform ease-in-out delay-75 duration-200 hover:scale-125">
+                    <img loading="lazy" src="./assets/img/icons/linkedin.png" alt="Twitter Icon" class="tranform ease-in-out delay-75 duration-200 hover:scale-125">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- TODO API Script -->
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[13%]')
+        }
+    </script>
+</body>
+
+</html>
